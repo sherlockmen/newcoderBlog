@@ -1,0 +1,14 @@
+2021-10-25 16:32:36.501  INFO 2648 --- [main] c.s.n.NewcoderBlogApplicationTests       : Starting NewcoderBlogApplicationTests using Java 14.0.1 on Sherlock-Men with PID 2648 (started by sherlockmen in E:\newcoderBlog)
+2021-10-25 16:32:36.502 DEBUG 2648 --- [main] c.s.n.NewcoderBlogApplicationTests       : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-25 16:32:36.504  INFO 2648 --- [main] c.s.n.NewcoderBlogApplicationTests       : No active profile set, falling back to default profiles: default
+2021-10-25 16:32:39.256  INFO 2648 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-25 16:32:39.903  INFO 2648 --- [main] c.s.n.NewcoderBlogApplicationTests       : Started NewcoderBlogApplicationTests in 3.741 seconds (JVM running for 4.657)
+2021-10-25 16:32:44.260  INFO 5860 --- [main] com.sherlockmen.newcoderBlog.LoggerTest  : Starting LoggerTest using Java 14.0.1 on Sherlock-Men with PID 5860 (started by sherlockmen in E:\newcoderBlog)
+2021-10-25 16:32:44.261 DEBUG 5860 --- [main] com.sherlockmen.newcoderBlog.LoggerTest  : Running with Spring Boot v2.5.5, Spring v5.3.10
+2021-10-25 16:32:44.262  INFO 5860 --- [main] com.sherlockmen.newcoderBlog.LoggerTest  : No active profile set, falling back to default profiles: default
+2021-10-25 16:32:46.661  INFO 5860 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-25 16:32:47.034  INFO 5860 --- [main] com.sherlockmen.newcoderBlog.LoggerTest  : Started LoggerTest in 3.247 seconds (JVM running for 4.105)
+2021-10-25 16:32:47.479 DEBUG 5860 --- [main] com.sherlockmen.newcoderBlog.LoggerTest  : debug Log
+2021-10-25 16:32:47.480  INFO 5860 --- [main] com.sherlockmen.newcoderBlog.LoggerTest  : info Log
+2021-10-25 16:32:47.480  WARN 5860 --- [main] com.sherlockmen.newcoderBlog.LoggerTest  : warn Log
+2021-10-25 16:32:47.480 ERROR 5860 --- [main] com.sherlockmen.newcoderBlog.LoggerTest  : error Log

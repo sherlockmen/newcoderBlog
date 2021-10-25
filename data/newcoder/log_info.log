@@ -1,0 +1,9 @@
+2021-10-25 16:43:16,198 INFO [main] c.s.n.NewcoderBlogApplicationTests [StartupInfoLogger.java:55] Starting NewcoderBlogApplicationTests using Java 14.0.1 on Sherlock-Men with PID 17264 (started by sherlockmen in E:\newcoderBlog)
+2021-10-25 16:43:16,206 INFO [main] c.s.n.NewcoderBlogApplicationTests [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-25 16:43:18,696 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-25 16:43:19,278 INFO [main] c.s.n.NewcoderBlogApplicationTests [StartupInfoLogger.java:61] Started NewcoderBlogApplicationTests in 3.631 seconds (JVM running for 4.693)
+2021-10-25 16:43:23,963 INFO [main] c.s.n.LoggerTest [StartupInfoLogger.java:55] Starting LoggerTest using Java 14.0.1 on Sherlock-Men with PID 4632 (started by sherlockmen in E:\newcoderBlog)
+2021-10-25 16:43:23,967 INFO [main] c.s.n.LoggerTest [SpringApplication.java:659] No active profile set, falling back to default profiles: default
+2021-10-25 16:43:26,047 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2021-10-25 16:43:26,486 INFO [main] c.s.n.LoggerTest [StartupInfoLogger.java:61] Started LoggerTest in 2.948 seconds (JVM running for 3.934)
+2021-10-25 16:43:26,983 INFO [main] c.s.n.LoggerTest [LoggerTest.java:22] info Log
