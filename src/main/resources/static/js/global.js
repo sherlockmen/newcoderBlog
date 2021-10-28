@@ -1,3 +1,6 @@
+var CONTEXT_PATH = "/newcoderBlog";
+
+
 window.alert = function(message) {
 	if(!$(".alert-box").length) {
 		$("body").append(
