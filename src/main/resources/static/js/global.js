@@ -1,5 +1,12 @@
 var CONTEXT_PATH = "/newcoderBlog";
 
+//发送AJAX请求之前，将CSRF令牌设置到请求的消息头中
+var token = $("meta[name='_csrf']").attr("content");
+var header = $("meta[name='_csrf_header']").attr("content");
+$(document).ajaxSend(function (e, xhr, options) {
+	xhr.setRequestHeader(header,token)
+});
+
 
 window.alert = function(message) {
 	if(!$(".alert-box").length) {
