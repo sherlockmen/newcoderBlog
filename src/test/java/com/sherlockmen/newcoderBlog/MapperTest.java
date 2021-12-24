@@ -97,14 +97,14 @@ public class MapperTest {
         loginTicketMapper.insertLoginTicket(loginTicket);
     }
 
-    @Test
-    public void TestSelectLoginTicket(){
-        LoginTicket loginTicket = loginTicketMapper.selectByTicket("abc");
-        System.out.println(loginTicket);
-
-        loginTicketMapper.updateStatus("abc",1);
-        loginTicket = loginTicketMapper.selectByTicket("abc");
-        System.out.println(loginTicket);
-    }
+    //@Test
+//    public void TestSelectLoginTicket(){
+//        LoginTicket loginTicket = loginTicketMapper.selectByTicket("abc");
+//        System.out.println(loginTicket);
+//
+//        loginTicketMapper.updateStatus("abc",1);
+//        loginTicket = loginTicketMapper.selectByTicket("abc");
+//        System.out.println(loginTicket);
+//    }
 
 }
