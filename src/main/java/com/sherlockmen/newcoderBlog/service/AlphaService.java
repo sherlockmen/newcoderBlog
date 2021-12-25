@@ -33,7 +33,7 @@ public class AlphaService {
         logger.debug("execute1");
     }
 
-    @Scheduled(initialDelay = 10000, fixedDelay = 1000)//该注解可以使方法可以使用spring定时任务线程池调用
+//    @Scheduled(initialDelay = 10000, fixedDelay = 1000)//该注解可以使方法可以使用spring定时任务线程池调用
     public void execute2(){
         logger.debug("execute2");
     }
