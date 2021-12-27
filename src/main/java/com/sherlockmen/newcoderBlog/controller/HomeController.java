@@ -36,7 +36,7 @@ public class HomeController implements NewCoderBlogConstant {
     public String getIndexPage(Model model, Page page, @RequestParam(name = "orderMode", defaultValue = "0") int orderMode){
 
         page.setRows(discussPostService.findDisscussPostRows(0));
-        page.setPath("/index?oderMode=" + orderMode);
+        page.setPath("/index?orderMode=" + orderMode);
 
         List<DiscussPost> list = discussPostService.findDisscussPosts(0,page.getOffset(),page.getLimit(), orderMode);
         List<Map<String, Object>> discussPosts = new ArrayList<>();
