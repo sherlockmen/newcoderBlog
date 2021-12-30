@@ -1,1 +1,155 @@
-2021-10-25 16:43:26,984 WARN [main] c.s.n.LoggerTest [LoggerTest.java:23] warn Log
+2021-12-28 14:05:58,715 WARN [main] c.s.n.LoggerTest [LoggerTest.java:23] warn Log
+2021-12-28 14:09:47,790 WARN [restartedMain] o.m.s.m.ClassPathMapperScanner [Logger.java:44] No MyBatis mapper was found in '[com.sherlockmen.newcoderBlog]' package. Please check your configuration.
+2021-12-28 14:09:48,566 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [E:\newcoderBlog\target\classes\mapper\Comment-mapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [E:\newcoderBlog\target\classes\mapper\Comment-mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'Comment'.  Cause: java.lang.ClassNotFoundException: Cannot find class: Comment
+2021-12-28 14:10:10,967 WARN [main] c.s.n.LoggerTest [LoggerTest.java:23] warn Log
+2021-12-28 14:19:22,470 WARN [main] c.s.n.LoggerTest [LoggerTest.java:23] warn Log
+2021-12-28 14:49:47,180 WARN [main] c.s.n.LoggerTest [LoggerTest.java:23] warn Log
+2021-12-28 14:50:42,673 WARN [http-nio-8080-exec-9] o.s.b.a.e.ElasticsearchHealthIndicator [AbstractHealthIndicator.java:89] Elasticsearch health check failed
+org.elasticsearch.ElasticsearchTimeoutException: java.util.concurrent.TimeoutException: Timeout waiting for task.
+	at org.elasticsearch.common.util.concurrent.FutureUtils.get(FutureUtils.java:72)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:54)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:44)
+	at org.springframework.boot.actuate.elasticsearch.ElasticsearchHealthIndicator.doHealthCheck(ElasticsearchHealthIndicator.java:80)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:98)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:50)
+	at org.springframework.boot.actuate.health.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:61)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:294)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:355)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.util.concurrent.TimeoutException: Timeout waiting for task.
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:235)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:69)
+	at org.elasticsearch.common.util.concurrent.FutureUtils.get(FutureUtils.java:70)
+	... 112 common frames omitted
+2021-12-28 14:54:58,233 WARN [main] c.s.n.LoggerTest [LoggerTest.java:23] warn Log
+2021-12-28 15:09:38,457 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginController': Unsatisfied dependency expressed through field 'kaptchaProducer'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.google.code.kaptcha.Producer' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-12-28 15:09:56,987 WARN [main] c.s.n.LoggerTest [LoggerTest.java:23] warn Log
+2021-12-28 15:11:07,296 WARN [main] c.s.n.LoggerTest [LoggerTest.java:23] warn Log
+2021-12-28 15:12:48,081 WARN [main] c.s.n.LoggerTest [LoggerTest.java:23] warn Log
+2021-12-28 17:00:53,440 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-16, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:53,440 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-12, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:53,484 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-10, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:53,484 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-14, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:55,563 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-16, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:55,563 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-12, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:55,610 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-10, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:55,610 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-14, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:57,810 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-16, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:57,857 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-10, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:57,857 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-12, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:00:57,904 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-14, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:00,211 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-16, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:00,304 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-12, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:00,304 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-14, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:00,367 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-10, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:02,991 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-12, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:03,006 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-16, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:03,147 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-14, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:03,380 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-10, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:06,001 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-12, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:06,048 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-16, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:06,048 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-14, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
+2021-12-28 17:01:06,342 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:671] [Consumer clientId=consumer-10, groupId=newcoderBlog-consumer-group] Connection to node 0 could not be established. Broker may not be available.
